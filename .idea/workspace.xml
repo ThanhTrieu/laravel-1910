@@ -2,9 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5f8279e1-5327-48b9-8af0-f20bcbd274c0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/test/covid/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/test/js/home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/test/contact/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/test/login/index.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/test/partials/footer.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/test/partials/header.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/test/test-layout.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TestController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/test/covid/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/test/covid/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +26,13 @@
     <execution>
       <executable />
     </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -137,7 +153,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -170,7 +186,9 @@
       <workItem from="1593608140673" duration="5053000" />
       <workItem from="1593660068202" duration="7000" />
       <workItem from="1593660122699" duration="63000" />
-      <workItem from="1594030613848" duration="9361000" />
+      <workItem from="1594030613848" duration="10262000" />
+      <workItem from="1594090965284" duration="542000" />
+      <workItem from="1594203744868" duration="9405000" />
     </task>
     <servers />
   </component>
@@ -178,14 +196,18 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="541" y="363" key="NewPhpFileDialog" timestamp="1594042559120">
+    <state x="541" y="363" key="NewPhpFileDialog" timestamp="1594211500645">
       <screen x="0" y="23" width="1440" height="823" />
     </state>
-    <state x="541" y="363" key="NewPhpFileDialog/0.23.1440.823@0.23.1440.823" timestamp="1594042559120" />
-    <state x="229" y="68" key="SettingsEditor" timestamp="1594056504840">
+    <state x="541" y="363" key="NewPhpFileDialog/0.23.1440.823@0.23.1440.823" timestamp="1594211500645" />
+    <state x="229" y="68" key="SettingsEditor" timestamp="1594206729223">
       <screen x="0" y="23" width="1440" height="822" />
     </state>
     <state x="229" y="68" key="SettingsEditor/0.23.1440.821@0.23.1440.821" timestamp="1594036125006" />
-    <state x="229" y="68" key="SettingsEditor/0.23.1440.822@0.23.1440.822" timestamp="1594056504840" />
+    <state x="229" y="68" key="SettingsEditor/0.23.1440.822@0.23.1440.822" timestamp="1594206729223" />
+    <state x="387" y="170" width="670" height="676" key="search.everywhere.popup" timestamp="1594211930233">
+      <screen x="0" y="23" width="1440" height="823" />
+    </state>
+    <state x="387" y="170" width="670" height="676" key="search.everywhere.popup/0.23.1440.823@0.23.1440.823" timestamp="1594211930233" />
   </component>
 </project>

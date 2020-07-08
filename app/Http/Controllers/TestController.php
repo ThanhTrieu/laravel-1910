@@ -58,4 +58,37 @@ class TestController extends Controller
         return view('test.covid.index', compact('corona'));
         // return view('test/covid/index');
     }
+
+    public function contact()
+    {
+        $name = '<strong><i>Thanh Trieu</i></strong>';
+        $age = 30;
+        $address = 'Ha Noi';
+        $phone = '086543223';
+        return view('test.contact.index',[
+            'myName' => $name,
+            'myAge' => $age,
+            'myAdd' => $address,
+            'myPhone' => $phone
+        ]);
+    }
+
+    public function login()
+    {
+        return view('test.login.index');
+    }
+
+    public function handleLogin(Request $request)
+    {
+        // hien thi tat ca du lieu tu form gui len
+        //dd($request->all());
+        $user = $request->input('user'); //$request->user;
+        $pass = $request->input('pass'); //$request->pass;
+        //dd($user, $pass);
+        if($user === 'admin' && $pass === '123'){
+            return redirect()->route('covid.19');
+        } else {
+            return redirect()->route('test.login');
+        }
+    }
 }

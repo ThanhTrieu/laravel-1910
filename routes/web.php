@@ -149,4 +149,8 @@ Route::get('not-permit', function () {
 Route::get('football/{team1}/{team2}', 'TestController@index')->name('football.index');
 Route::get('tennis/{player1}/{player2}', 'TestController@tennis')->name('tennis');
 //http://localhost:8000/tennis/nadal/nole?time=10-10-2020&place=Spain
+
 Route::get('word/covid-19','TestController@covidCorona')->name('covid.19');
+Route::get('/contact', 'TestController@contact')->name('test.contact');
+Route::get('test/login', 'TestController@login')->name('test.login');
+Route::post('test/handle-login', 'TestController@handleLogin')->name('test.handle.login');
