@@ -154,3 +154,10 @@ Route::get('word/covid-19','TestController@covidCorona')->name('covid.19');
 Route::get('/contact', 'TestController@contact')->name('test.contact');
 Route::get('test/login', 'TestController@login')->name('test.login');
 Route::post('test/handle-login', 'TestController@handleLogin')->name('test.handle.login');
+
+Route::group([
+    'namespace' => 'QueryBuilder',
+    'prefix' => 'query'
+],function (){
+    Route::get('test','QueryBuilderController@index');
+});
