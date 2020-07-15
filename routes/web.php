@@ -1,7 +1,4 @@
 <?php
-
-use Illuminate\Support\Facades\Route;
-
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -103,6 +100,7 @@ Route::get('view-api', function (){
     // return redirect(route('api.user'));
 });
 
+/*
 //Accessing The Current Route
 Route::get('admin/dashboard', function () {
     //$currentRoute = Route::current();
@@ -113,6 +111,7 @@ Route::get('admin/dashboard', function () {
     $action = Route::currentRouteAction();
     dd($action);
 })->name('admin.dashboard');
+*/
 
 /* su dung middle cho route */
 Route::get('xem-phim/{age}', function ($age) {
@@ -160,4 +159,11 @@ Route::group([
     'prefix' => 'query'
 ],function (){
     Route::get('test','QueryBuilderController@index');
+});
+
+Route::group([
+    'namespace' => 'EloquentORM',
+    'prefix' => 'eloquent-orm'
+],function (){
+    Route::get('test','EloquentController@index');
 });
