@@ -66,5 +66,7 @@ class Kernel extends HttpKernel
         'check.age' => \App\Http\Middleware\CheckAge::class,
         'kiem.tra.chan.le' => \App\Http\Middleware\KiemTraChanLe::class,
         'check.view.api' => \App\Http\Middleware\CheckTokenViewApi::class,
+        'check.login.admin' => \App\Http\Middleware\checkAdminLogin::class,
+        'is.logined.admin' => \App\Http\Middleware\IsLoginedAdmin::class,
     ];
 }

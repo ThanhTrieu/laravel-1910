@@ -50,6 +50,12 @@
                                     </div>
                                 @endif
 
+                                @if(!empty($msgErr))
+                                    <div class="alert alert-danger">
+                                        <p>{{$msgErr}}</p>
+                                    </div>
+                                @endif
+
                                 <form class="user" action="{{route('admin.handle.login')}}" method="post">
                                     @csrf
                                     <div class="form-group">

@@ -18,4 +18,9 @@ class Brand extends Model
         //products : ten ham do LTV tu dinh nghia - thong thuong hay dat trung ten bang cho y nghia va de hieu
         return $this->hasMany('App\Model\Product','brands_id', 'id');
     }
+
+    public function insertDataBrand($dataBrand)
+    {
+        return Brand::create($dataBrand);
+    }
 }
