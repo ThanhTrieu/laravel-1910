@@ -30,7 +30,11 @@ Route::group([
 ], function (){
     Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
     Route::get('/list-products', 'ProductController@index')->name('list.products');
+
     Route::get('/list-brands', 'BrandController@index')->name('brand');
     Route::get('/brand/add-brand', 'BrandController@addBrand')->name('add.brand');
     Route::post('/brand/handle-add', 'BrandController@handleAddBrand')->name('handle.add.brand');
+    Route::post('/brand/delete-brand', 'BrandController@deleteBrand')->name('brand.delete');
+    Route::get('/brand/{slug}~{id}','BrandController@detail')->name('brand.detail');
+    Route::post('/brand/handle-edit/{id}','BrandController@handleEdit')->name('brand.handle.edit');
 });
