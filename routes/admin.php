@@ -29,7 +29,10 @@ Route::group([
     'middleware' => ['web', 'check.login.admin']
 ], function (){
     Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+
     Route::get('/list-products', 'ProductController@index')->name('list.products');
+    Route::get('/add-product', 'ProductController@add')->name('add.product');
+    Route::post('/handle-add-product', 'ProductController@handleAdd')->name('handle.add.product');
 
     Route::get('/list-brands', 'BrandController@index')->name('brand');
     Route::get('/brand/add-brand', 'BrandController@addBrand')->name('add.brand');
