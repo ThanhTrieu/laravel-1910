@@ -10,10 +10,10 @@
 |
 */
 
-Route::get('/', function () {
-    //return view('welcome');
-    return "This is class php1910E";
-});
+//Route::get('/', function () {
+//    //return view('welcome');
+//    return "This is class php1910E";
+//});
 
 // method get
 Route::get('hello-word', function () {
